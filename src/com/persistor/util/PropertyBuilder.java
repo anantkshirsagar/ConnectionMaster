@@ -70,4 +70,14 @@ public class PropertyBuilder extends AbstractProperty {
 	public String getHost() {
 		return this.host;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("PropertyBuilder [port=").append(port).append(", driverUrl=").append(driverUrl)
+				.append(", username=").append(username).append(", password=").append(password).append(", jdbcUrl=")
+				.append(jdbcUrl).append(", host=").append(host).append(", databaseName=").append(databaseName)
+				.append("]");
+		return builder.toString();
+	}
 }
