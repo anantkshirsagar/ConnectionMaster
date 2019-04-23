@@ -1,13 +1,20 @@
-package com.persistor.setting;
+package com.connectionmgmt.setting;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.logging.Logger;
 
-import com.persistor.util.AbstractProperty;
+import com.connectionmgmt.util.AbstractProperty;
 
-public class PropertySettings extends AbstractPropertySettings {
+/**
+ * 
+ * @author ANANT
+ *
+ */
+public class ConnectionSettings extends AbstractConnectionSettings {
+	private Logger logger = Logger.getLogger(ConnectionSettings.class.getName());
 
-	public PropertySettings(AbstractProperty abstractProperty) {
+	public ConnectionSettings(AbstractProperty abstractProperty) {
 		this.abstractProperty = abstractProperty;
 	}
 
@@ -16,6 +23,7 @@ public class PropertySettings extends AbstractPropertySettings {
 		Class.forName(abstractProperty.getDriverUrl());
 		connection = DriverManager.getConnection(abstractProperty.getJdbcUrl(), abstractProperty.getUsername(),
 				abstractProperty.getPassword());
+		logger.info("Connection build");
 	}
 
 	@Override
@@ -31,5 +39,6 @@ public class PropertySettings extends AbstractPropertySettings {
 	@Override
 	public void closeConnection() throws Exception {
 		this.connection.close();
+		logger.info("Connection closed");
 	}
 }

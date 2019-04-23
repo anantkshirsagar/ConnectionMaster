@@ -1,5 +1,10 @@
-package com.persistor.util;
+package com.connectionmgmt.util;
 
+/**
+ * 
+ * @author ANANT
+ *
+ */
 public class PropertyBuilder extends AbstractProperty {
 	@Override
 	public void setPort(int port) {

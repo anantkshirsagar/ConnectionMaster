@@ -1,5 +1,10 @@
-package com.persistor.util;
+package com.connectionmgmt.util;
 
+/**
+ * 
+ * @author ANANT
+ *
+ */
 public abstract class AbstractProperty implements IProperty{
 	protected int port;
 	protected String driverUrl;

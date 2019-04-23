@@ -1,11 +1,11 @@
-package com.persistor.test;
+package com.connectionmgmt.test;
 
 import java.sql.Connection;
 import java.sql.Statement;
 
-import com.persistor.setting.PropertySettings;
-import com.persistor.util.AbstractProperty;
-import com.persistor.util.PropertyBuilder;
+import com.connectionmgmt.setting.ConnectionSettings;
+import com.connectionmgmt.util.AbstractProperty;
+import com.connectionmgmt.util.PropertyBuilder;
 
 public class TestProperty {
 	private static AbstractProperty property = null;
@@ -18,7 +18,7 @@ public class TestProperty {
 		property.setPassword(MySqlProperties.PASSWORD);
 		property.setJdbcUrl(MySqlProperties.JDBC_URL);
 		
-		PropertySettings propertySettings = new PropertySettings(property);
+		ConnectionSettings propertySettings = new ConnectionSettings(property);
 		try {
 			propertySettings.build();
 			Statement stmt = propertySettings.getConnection().createStatement();

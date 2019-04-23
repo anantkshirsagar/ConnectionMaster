@@ -1,4 +1,4 @@
-package com.persistor.test;
+package com.connectionmgmt.test;
 
 public interface MySqlProperties {
 	public int PORT = 3306;
