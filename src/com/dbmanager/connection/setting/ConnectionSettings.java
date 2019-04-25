@@ -1,12 +1,13 @@
-package com.connectionmgmt.setting;
+package com.dbmanager.connection.setting;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.logging.Logger;
 
-import com.connectionmgmt.util.AbstractProperty;
+import com.dbmanager.property.util.AbstractProperty;
 
 /**
+ * ConnectionSettings is used manage connection operations
  * 
  * @author ANANT
  *

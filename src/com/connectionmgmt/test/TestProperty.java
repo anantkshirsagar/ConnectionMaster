@@ -3,9 +3,9 @@ package com.connectionmgmt.test;
 import java.sql.Connection;
 import java.sql.Statement;
 
-import com.connectionmgmt.setting.ConnectionSettings;
-import com.connectionmgmt.util.AbstractProperty;
-import com.connectionmgmt.util.PropertyBuilder;
+import com.dbmanager.connection.setting.ConnectionSettings;
+import com.dbmanager.property.util.AbstractProperty;
+import com.dbmanager.property.util.PropertyBuilder;
 
 public class TestProperty {
 	private static AbstractProperty property = null;

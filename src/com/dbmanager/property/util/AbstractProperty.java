@@ -1,4 +1,4 @@
-package com.connectionmgmt.util;
+package com.dbmanager.property.util;
 
 /**
  * 

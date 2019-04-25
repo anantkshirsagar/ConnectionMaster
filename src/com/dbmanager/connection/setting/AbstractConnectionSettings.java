@@ -1,8 +1,8 @@
-package com.connectionmgmt.setting;
+package com.dbmanager.connection.setting;
 
 import java.sql.Connection;
 
-import com.connectionmgmt.util.AbstractProperty;
+import com.dbmanager.property.util.AbstractProperty;
 
 /**
  * 
