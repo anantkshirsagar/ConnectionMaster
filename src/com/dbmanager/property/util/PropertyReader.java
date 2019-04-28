@@ -31,17 +31,10 @@ public class PropertyReader {
 		Properties properties = new Properties();
 		properties.load(new FileInputStream(file));
 		LOG.info("Properties file loading...");
-		abstractProperty.setPort(Integer.parseInt(properties.getProperty("db.port")));
 		abstractProperty.setDriverUrl(properties.getProperty("db.driverURL"));
-		abstractProperty.setHost(properties.getProperty("db.host"));
 		abstractProperty.setUsername(properties.getProperty("db.username"));
 		abstractProperty.setPassword(properties.getProperty("db.password"));
-		abstractProperty.setDatabaseName(properties.getProperty("db.databaseName"));
-		StringBuilder url = new StringBuilder(properties.getProperty("db.jdbcURL"));
-		StringBuilder jdbcURL = url.append(abstractProperty.getHost()).append(":")
-				.append(String.valueOf(abstractProperty.getPort())).append("/")
-				.append(abstractProperty.getDatabaseName());
-		abstractProperty.setJdbcUrl(jdbcURL.toString());
+		abstractProperty.setJdbcUrl(properties.getProperty("db.jdbcURL"));
 		LOG.info(abstractProperty.toString());
 		return abstractProperty;
 	}

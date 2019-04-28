@@ -11,9 +11,7 @@ public class TestProperty {
 	private static AbstractProperty property = null;
 	static {
 		property = new PropertyBuilder();
-		property.setDatabaseName(MySqlProperties.DATABASE_NAME);
 		property.setDriverUrl(MySqlProperties.DRIVER_URL);
-		property.setPort(MySqlProperties.PORT);
 		property.setUsername(MySqlProperties.USERNAME);
 		property.setPassword(MySqlProperties.PASSWORD);
 		property.setJdbcUrl(MySqlProperties.JDBC_URL);

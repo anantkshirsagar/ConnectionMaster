@@ -6,7 +6,6 @@ package com.dbmanager.property.util;
  *
  */
 public interface IProperty {
-	public abstract void setPort(int port);
 
 	public abstract void setDriverUrl(String driverUrl);
 
@@ -16,12 +15,6 @@ public interface IProperty {
 
 	public abstract void setJdbcUrl(String jdbcUrl);
 
-	public abstract void setDatabaseName(String databaseName);
-
-	public abstract void setHost(String host);
-
-	public abstract int getPort();
-
 	public abstract String getDriverUrl();
 
 	public abstract String getUsername();
@@ -29,8 +22,4 @@ public interface IProperty {
 	public abstract String getPassword();
 
 	public abstract String getJdbcUrl();
-
-	public abstract String getDatabaseName();
-
-	public abstract String getHost();
 }
