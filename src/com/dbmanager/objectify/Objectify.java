@@ -10,8 +10,8 @@ import java.io.Serializable;
 import java.util.logging.Logger;
 
 /**
- * ObjectUtils is used to serialize and deserialize objects 
- * @author ANANT
+ * Objectify is used to serialize and deserialize objects 
+ * @author Anant Kshirsagar
  *
  */
 public class Objectify {

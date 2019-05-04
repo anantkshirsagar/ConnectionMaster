@@ -2,7 +2,7 @@ package com.dbmanager.property.util;
 
 /**
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public interface IProperty {

@@ -6,7 +6,7 @@ import com.dbmanager.property.util.AbstractProperty;
 
 /**
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public abstract class AbstractConnectionSettings implements IConnectionSettings {

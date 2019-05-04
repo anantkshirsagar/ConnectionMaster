@@ -9,7 +9,7 @@ import com.dbmanager.property.util.AbstractProperty;
 /**
  * ConnectionSettings is used manage connection operations
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public class ConnectionSettings extends AbstractConnectionSettings {

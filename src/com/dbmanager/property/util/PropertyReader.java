@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 /**
  * PropertyReader reads database properties from .properties files
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public class PropertyReader {

@@ -2,7 +2,7 @@ package com.dbmanager.property.util;
 
 /**
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public abstract class AbstractProperty implements IProperty{

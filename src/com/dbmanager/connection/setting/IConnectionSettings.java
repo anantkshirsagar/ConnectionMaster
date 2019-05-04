@@ -5,7 +5,7 @@ import java.sql.Connection;
 /**
  * IConnectionSettings contains connection management methods.
  * 
- * @author ANANT
+ * @author Anant Kshirsagar
  *
  */
 public interface IConnectionSettings {
