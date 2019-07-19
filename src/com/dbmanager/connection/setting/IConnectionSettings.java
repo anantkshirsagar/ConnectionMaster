@@ -1,6 +1,7 @@
 package com.dbmanager.connection.setting;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * IConnectionSettings contains connection management methods.
@@ -14,7 +15,7 @@ public interface IConnectionSettings {
 
 	public abstract Connection getConnection();
 
-	public abstract void closeConnection() throws Exception;
+	public abstract void closeConnection() throws SQLException;
 
 	/**
 	 * This method is used to set connection properties and build connection
@@ -22,5 +23,5 @@ public interface IConnectionSettings {
 	 * @throws Exception
 	 * 
 	 */
-	public abstract void build() throws Exception;
+	public abstract void build() throws ClassNotFoundException, SQLException;
 }

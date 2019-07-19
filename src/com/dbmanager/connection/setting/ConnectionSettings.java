@@ -2,6 +2,7 @@ package com.dbmanager.connection.setting;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.logging.Logger;
 
 import com.dbmanager.property.util.AbstractProperty;
@@ -20,7 +21,7 @@ public class ConnectionSettings extends AbstractConnectionSettings {
 	}
 
 	@Override
-	public void build() throws Exception {
+	public void build() throws ClassNotFoundException, SQLException {
 		Class.forName(abstractProperty.getDriverUrl());
 		connection = DriverManager.getConnection(abstractProperty.getJdbcUrl(), abstractProperty.getUsername(),
 				abstractProperty.getPassword());
@@ -38,7 +39,7 @@ public class ConnectionSettings extends AbstractConnectionSettings {
 	}
 
 	@Override
-	public void closeConnection() throws Exception {
+	public void closeConnection() throws SQLException  {
 		this.connection.close();
 		logger.info("Connection closed");
 	}
